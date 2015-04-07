@@ -62,7 +62,7 @@ module.exports = function(grunt) {
         dir: 'test/coverage/reports',
         print: 'detail'
       }
-    }
+    },
       
       
     
