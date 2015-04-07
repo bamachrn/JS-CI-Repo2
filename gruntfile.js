@@ -66,7 +66,7 @@ module.exports = function(grunt) {
       
       
     
-      /*plato: {
+      plato: {
   your_task: {
     options : {
       jshint : grunt.file.readJSON('./node_modules/grunt-plato/.jshintrc')
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
       'reports': ['./lib/hello.js','./lib/index.js']
     }
   }
-}*/
+}
                    
 
       
@@ -88,11 +88,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-simple-mocha');
- // grunt.loadNpmTasks('grunt-plato');
+  grunt.loadNpmTasks('grunt-plato');
     grunt.loadNpmTasks('grunt-istanbul');
 //  grunt.loadNpmTasks('grunt-mocha');
 
 
-  grunt.registerTask('default', ['jshint','uglify','simplemocha',/*'plato' */,'coverage'])
+  grunt.registerTask('default', ['jshint','uglify','simplemocha','plato','coverage'])
 
 };
