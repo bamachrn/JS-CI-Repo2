@@ -44,7 +44,7 @@ module.exports = function(grunt) {
           globals: ['chai'],
           timeout: 3000,
           ignoreLeaks: false,
-          reporter: 'mochawesome --no-exit'
+          reporter: 'mochawesome'
     },
 
     all: { src: ['test/*-test.js'] }
