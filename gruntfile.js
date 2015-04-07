@@ -82,7 +82,7 @@ module.exports = function(grunt) {
       
       
 });
- grunt.registerTask('coverage', ['instrument', 'simplemocha', 'storeCoverage', 'makeReport']);
+ grunt.registerTask('coverage', ['instrument', 'simplemocha', /*'storeCoverage',*/ 'makeReport']);
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
