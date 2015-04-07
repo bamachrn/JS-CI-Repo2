@@ -54,14 +54,14 @@ module.exports = function(grunt) {
         dir: 'test/coverage/reports'
       }
     },*/
-    makeReport: {
-      src: 'test/coverage/reports/**/*.json',
+/*    makeReport: {
+      src: 'test/coverage/reports/**//**.json',
       options: {
         type: 'lcov',
         dir: 'test/coverage/reports',
         print: 'detail'
       }
-    },
+    },*/
       
       
     
@@ -92,6 +92,6 @@ module.exports = function(grunt) {
 //  grunt.loadNpmTasks('grunt-mocha');
 
 
-  grunt.registerTask('default', ['jshint','uglify','simplemocha','plato','makeReport'])
+  grunt.registerTask('default', ['jshint','uglify','simplemocha','plato'/*,'makeReport'*/])
 
 };
