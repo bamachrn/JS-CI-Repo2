@@ -12,7 +12,7 @@
     "node"
   ],
   "scripts": {
-    "test": "make test"
+    "test": "./node_modules/.bin/mocha --recursive -R xunit test/ > test-reports.xml"
   },
   "description": "A skeleton Node.JS project, with Mocha for testing.",
   "keywords": [
