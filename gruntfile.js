@@ -50,11 +50,11 @@ module.exports = function(grunt) {
     all: { src: ['test/*-test.js'] }
   },
       
-    storeCoverage: {
+    /*storeCoverage: {
       options: {
         dir: 'test/coverage/reports'
       }
-    },
+    },*/
     makeReport: {
       src: 'test/coverage/reports/**/*.json',
       options: {
