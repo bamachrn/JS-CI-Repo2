@@ -30,7 +30,7 @@
     "optimist": ">=0.3.4",
     "sinon": ">=1.6.0",
     "underscore": ">=1.4.3",
-    "istanbul": "^0.3.13"  // Add the istanbul dependency for generating the reports
+    "istanbul": "^0.3.13"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
