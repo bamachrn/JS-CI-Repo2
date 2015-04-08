@@ -17,7 +17,7 @@ describe('Hello', function() {
       var hello = new Hello({
         helloMessage: '你好世界'
       })
-      assert.equal('你好世界', hello.sayHello());
+      assert.equal('vaibhav', hello.sayHello());
     });
 
   });
