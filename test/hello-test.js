@@ -10,7 +10,7 @@ describe('Hello', function() {
     
     it('should return the default hello message if no options are provided', function() {
       var hello = new Hello();
-      assert.equal('Hello World!', hello.sayHello());
+      assert.equal('Hello World!fail', hello.sayHello());
     });
 
     it('should allow the user to override the helloMessage when instantiating', function() {
