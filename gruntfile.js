@@ -75,10 +75,28 @@ module.exports = function(grunt) {
       'reports': ['./lib/hello.js','./lib/index.js']
     }
   }
+},
+jasmine_node: {
+        options: {
+      forceExit: true,  
+      match: '.',
+      matchall: false,
+      extensions: 'js',
+      specNameMatcher: 'spec'
+	 
+    },
+   //all1: ['spec/'],
+	report: {
+    type: 'html',
+    options: {
+        dir: 'bin/coverage/html'
+    }
 }
+  }
                    
 
-      
+
+ 
       
 });
 // grunt.registerTask('coverage', ['instrument', 'simplemocha', /*'storeCoverage',*/ 'makeReport']);
@@ -89,9 +107,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-simple-mocha');
   grunt.loadNpmTasks('grunt-plato');
     grunt.loadNpmTasks('grunt-istanbul');
+	grunt.loadNpmTasks('grunt-jasmine-node');
 //  grunt.loadNpmTasks('grunt-mocha');
 
 
   grunt.registerTask('default', ['jshint','uglify','simplemocha','plato'/*,'makeReport'*/])
+     grunt.registerTask('test', [ 'jasmine_node']);
 
 };
