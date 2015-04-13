@@ -54,7 +54,7 @@ module.exports = function(grunt) {
         dir: 'test/coverage/reports'
       }
     },*/
-    makeReport: {
+/*    makeReport: {
       src: 'test/**//**.js',
       options: {
         type: 'lcov',
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
         print: 'detail'
       }
     },
-      
+  */    
       
     
       plato: {
@@ -111,7 +111,7 @@ jasmine_node: {
 //  grunt.loadNpmTasks('grunt-mocha');
 
 
-  grunt.registerTask('default', ['jshint','uglify','simplemocha','plato','makeReport'])
+  grunt.registerTask('default', ['jshint','uglify','simplemocha','plato'/*,'makeReport'*/])
      grunt.registerTask('test', [ 'jasmine_node']);
 
 };
