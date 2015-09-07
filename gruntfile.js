@@ -3,15 +3,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
 
       
-      jshint: {
-      files: ['./lib/hello.js','./lib/index.js'],
-      options: {
-        globals: {
-          jQuery: true
-        }
-      }
-    },
-	
       
     uglify: {
       options: {
